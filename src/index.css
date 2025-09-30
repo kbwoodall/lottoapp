@@ -1,0 +1,12 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Global base overrides: make all text bold and black */
+@layer base {
+	/* Use high-specificity rules to override component utilities when necessary */
+	html, body, #root, * {
+		color: #000 !important;
+		font-weight: 700 !important;
+	}
+}
