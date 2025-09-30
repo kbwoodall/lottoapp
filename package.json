@@ -1,12 +1,15 @@
 {
   "name": "lotto-app",
   "version": "0.1.0",
+  "homepage": "https://kbwoodall.github.io/lotto",
   "private": true,
   "scripts": {
   "dev": "vite",
   "start": "vite",
     "build": "vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "predeploy":"npm run Build",
+    "deploy": "gh-pages -d build"
   },
   "dependencies": {
     "react": "18.2.0",
